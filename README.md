@@ -1,12 +1,24 @@
 # Judo score board
 
 A full Judo scoreboard software in a *single HTML file*.
-Usable without webserver, just open score.html locally in your webbrowser. The ressource folder is for convenience only.
+Open it from the hosted page (always the latest version, works offline after the first visit) or just open score.html locally in your webbrowser. The ressource folder is for convenience only.
 Optionally you can use a Google Spreadsheet to add data automaticly to your scoreboard. With each reload (shortcut: r) data is fetched from your spreadsheet. It displays data of the first fight which has  `done == false`.
 
 ![screenshot](google_sheet.png?raw=true "Example view")
 
 ![screenshot](scoreboard.png?raw=true "Example view")
+
+## Hosted version (recommended)
+The scoreboard is published with GitHub Pages on every push to `master`:
+
+https://jacwohlen.github.io/judoscore/
+
+- **Always up to date:** no local copy to update, just open the URL.
+- **Works offline:** on the first visit (with internet) the browser keeps a copy of the page. If the internet connection is lost, the page still loads, also when pressing refresh. Open the URL once on each scoreboard computer before the event.
+- **Fight survives reload:** points, shidos, times and names are saved in the browser on every change. After a reload the fight continues; the clocks are stopped, continue with Hajime. Press R to start the next fight.
+- Chrome/Edge offer to install it as an app (install icon in the address bar), which opens it fullscreen.
+
+Publishing (one-time setup): repository Settings → Pages → Source: "GitHub Actions". The workflow `.github/workflows/pages.yml` then deploys on every push to `master`.
 
 ## HW-setup
 The software was designed to operate in "duplicate-screen"-setup, so that the operator sees the same as the audience. 
@@ -32,15 +44,14 @@ To get data off a sheet you have to do following steps.
 
 2. Make sure your Sheet is set to share with "anyone with link".
 
-3. get your spreadsheet-ID from the URL and your sheetname and set the variables whithin score.html:
+3. Open the config menu (gear icon or key C), paste the sheet URL (or its ID) and the sheet tab name in section "Google Sheet", and click Save. Settings are kept in the browser.
 
-``` js
-// set spreadSheetId and sheet variable, if you want to load fighter names from a Google sheet.
-var spreadSheetId = "";
-var sheet = "";
-var apiKey = ""; // optional
-var gsx2json = "https://gsx2json.com/api"; // if you use your own self hosted gsx2json instance. Change url accordingly.
-```
+4. To set up further scoreboards with the same sheet, copy the "Share link" from the config menu and open it on each scoreboard computer, e.g.
+   `https://jacwohlen.github.io/judoscore/?sheetId=<sheet ID>&sheetName=Mat%201` (optional `&apiKey=<key>`).
+   With several mats use one sheet tab per mat and change `sheetName` per link.
+
+Defaults can still be set in the variables `spreadSheetId`, `sheet`, `apiKey` and `gsx2json` at the top of score.html, e.g. for an own copy.
+
 I highly suggest you use a Google Developer API key. For more information visit [GSX2JSON](https://gsx2json.com/).
 
 ## GSX2JSON
