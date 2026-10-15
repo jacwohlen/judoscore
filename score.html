@@ -9,6 +9,9 @@ Free usage and modification for non-commercial use.
 <head>
     <title>Judo score board</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
 </head>
 
 <body onload="init()">
@@ -52,19 +55,16 @@ Free usage and modification for non-commercial use.
             "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",
             "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"];
 
-        // set spreadSheetId and sheet variable, if you want to load fighter names from a Google sheet.
+        // Optional defaults for loading fighter names from a Google sheet.
+        // Normally left empty: the sheet is set in the config menu or via link parameters
+        // (?sheetId=...&sheetName=...&apiKey=...), see README.
         var spreadSheetId = "";
         var sheet = "";
         var apiKey = ""; // optional
         var gsx2json = "https://gsx2json.com/api"; // if you use your own self hosted gsx2json instance. Change url accordingly.
-        
+
+        var sheetConf; // {id, name, apiKey, server}, see loadSheetConfig()
         var fightInfoJsonServerUrl = "";
-        if (spreadSheetId && sheet) {
-            fightInfoJsonServerUrl = gsx2json + "?id=" + spreadSheetId + "&sheet=" + sheet;
-        }
-        if (apiKey) {
-            fightInfoJsonServerUrl = fightInfoJsonServerUrl + "&api_key=" + apiKey;
-        }
 
         /*
          * Start fight counter
@@ -306,6 +306,7 @@ Free usage and modification for non-commercial use.
                 yuko_divs[i].innerHTML = yukos[i];
                 shido_divs[i].src = "data:image/png;base64," + shidoImgs[shidos[i]];
             }
+            saveState();
         }
 
         /*
@@ -322,6 +323,8 @@ Free usage and modification for non-commercial use.
                 goldenScore_div.style.display = "block";
             else
                 goldenScore_div.style.display = "none";
+
+            saveState();
         }
 
         /*
@@ -371,13 +374,23 @@ Free usage and modification for non-commercial use.
             sound_audio[3] = document.getElementById("sound3");
             sound_audio[4] = document.getElementById("sound4");
 
-            reset();
+            for (var i = 0; i < labelIds.length; i++)
+                document.getElementById(labelIds[i]).addEventListener("input", saveState);
+
+            var sheetChanged = loadSheetConfig();
+
+            // continue the fight from before a page reload, if there is one
+            var state = loadState();
+            reset(state != null && !sheetChanged);
+            if (state)
+                restoreState(state);
         }
 
         /*
-         * Reset score panel, times and tries to load fight info 
+         * Reset score panel, times and tries to load fight info
+         * skipFightInfo: do not load fight info from the Google sheet
          */
-        function reset() {
+        function reset(skipFightInfo) {
             ippons = [0, 0];
             wazaris = [0, 0];
             yukos = [0, 0];
@@ -393,8 +406,88 @@ Free usage and modification for non-commercial use.
             resetOsaeTime();
 
             // try to load fight info
-            if (fightInfoJsonServerUrl)
+            if (fightInfoJsonServerUrl && !skipFightInfo)
                 requestServerFightInfo();
+
+            draw();
+        }
+
+        /*
+         * Fight state persistence: the current fight is saved to local storage on every change,
+         * so an accidental page reload (also without internet connection) continues the fight.
+         */
+        var labelIds = ["whitename", "bluename", "group", "round"]; // editable names
+
+        function getLabel(id) {
+            var div = document.getElementById(id);
+            var input = div.getElementsByTagName("input")[0];
+            return input ? input.value : div.textContent;
+        }
+
+        function setLabel(id, text) {
+            var div = document.getElementById(id);
+            var input = div.getElementsByTagName("input")[0];
+            if (input)
+                input.value = text;
+            else
+                div.textContent = text;
+        }
+
+        function saveState() {
+            if (!window.localStorage || !ippon_divs[0])
+                return;
+
+            var state = {
+                ippons: ippons,
+                wazaris: wazaris,
+                yukos: yukos,
+                shidos: shidos,
+                fightTimeSec: fightTimeSec,
+                osaeTimeSec: osaeTimeSec,
+                goldenScoreActive: goldenScoreActive,
+                labels: {}
+            };
+            for (var i = 0; i < labelIds.length; i++)
+                state.labels[labelIds[i]] = getLabel(labelIds[i]);
+
+            try {
+                localStorage.setItem("judoscoreboardstate", JSON.stringify(state));
+            } catch (e) { }
+        }
+
+        function loadState() {
+            try {
+                return JSON.parse(localStorage.getItem("judoscoreboardstate"));
+            } catch (e) {
+                return null;
+            }
+        }
+
+        /*
+         * Apply a saved fight state. Clocks are restored stopped, continue with Hajime.
+         */
+        function restoreState(state) {
+            function pair(value, max) {
+                if (!value || value.length != 2)
+                    return [0, 0];
+                return [Math.max(0, Math.min(max, parseInt(value[0]) || 0)), Math.max(0, Math.min(max, parseInt(value[1]) || 0))];
+            }
+            ippons = pair(state.ippons, 9);
+            wazaris = pair(state.wazaris, 99);
+            yukos = pair(state.yukos, 99);
+            shidos = pair(state.shidos, 3);
+            if (state.fightTimeSec >= 0)
+                fightTimeSec = parseInt(state.fightTimeSec);
+            if (state.osaeTimeSec >= 0)
+                osaeTimeSec = parseInt(state.osaeTimeSec);
+            goldenScoreActive = !!state.goldenScoreActive;
+
+            if (state.labels) {
+                for (var i = 0; i < labelIds.length; i++) {
+                    if (typeof state.labels[labelIds[i]] == "string")
+                        setLabel(labelIds[i], state.labels[labelIds[i]]);
+                }
+            }
 
             draw();
         }
@@ -428,6 +521,17 @@ Free usage and modification for non-commercial use.
                 bellNumConf = Math.max(0, Math.min(7, parseInt(document.getElementById("menu_bellnum").value)));
 
                 saveConfig();
+
+                var oldFightInfoUrl = fightInfoJsonServerUrl;
+                saveSheetConfig({
+                    id: extractSheetId(document.getElementById("menu_sheetid").value),
+                    name: document.getElementById("menu_sheetname").value.trim(),
+                    apiKey: document.getElementById("menu_sheetapikey").value.trim(),
+                    server: document.getElementById("menu_sheetserver").value.trim() || gsx2json
+                });
+                if (fightInfoJsonServerUrl && fightInfoJsonServerUrl != oldFightInfoUrl)
+                    requestServerFightInfo(); // sheet changed: load current fight right away
+
                 menu_div.style.display = "none";
 
             } else { // open menu
@@ -437,6 +541,12 @@ Free usage and modification for non-commercial use.
                 document.getElementById("menu_osaetime").value = osaeTimeSecConf;
                 document.getElementById("menu_goldenScoretime").value = goldenScoreTimeSecConf;
                 document.getElementById("menu_bellnum").value = bellNumConf;
+
+                document.getElementById("menu_sheetid").value = sheetConf.id;
+                document.getElementById("menu_sheetname").value = sheetConf.name;
+                document.getElementById("menu_sheetapikey").value = sheetConf.apiKey;
+                document.getElementById("menu_sheetserver").value = sheetConf.server;
+                document.getElementById("menu_sharelink").value = sheetShareLink();
 
                 document.getElementById("menu_fighttimecorrect").value = fightTimeSec;
                 document.getElementById("menu_osaetimecorrect").value = osaeTimeSec;
@@ -540,6 +650,78 @@ Free usage and modification for non-commercial use.
         }
 
         /*
+         * Google sheet config: defaults from the variables at the top, overridden by
+         * local storage (config menu), overridden by link parameters ?sheetId=&sheetName=&apiKey=
+         * Returns true, if link parameters changed the sheet.
+         */
+        function loadSheetConfig() {
+            var conf = { id: spreadSheetId, name: sheet, apiKey: apiKey, server: gsx2json };
+
+            try {
+                var stored = JSON.parse(localStorage.getItem("judoscoreboardsheet"));
+                if (stored) {
+                    for (var key in conf) {
+                        if (typeof stored[key] == "string")
+                            conf[key] = stored[key];
+                    }
+                }
+            } catch (e) { }
+
+            applySheetConfig(conf);
+
+            var params = new URLSearchParams(location.search);
+            if (params.get("sheetId")) {
+                var oldFightInfoUrl = fightInfoJsonServerUrl;
+                saveSheetConfig({ // remember, also when opened later without parameters
+                    id: extractSheetId(params.get("sheetId")),
+                    name: params.get("sheetName") || "",
+                    apiKey: params.get("apiKey") || "",
+                    server: conf.server
+                });
+                return fightInfoJsonServerUrl != oldFightInfoUrl;
+            }
+            return false;
+        }
+
+        function saveSheetConfig(conf) {
+            applySheetConfig(conf);
+            try {
+                localStorage.setItem("judoscoreboardsheet", JSON.stringify(conf));
+            } catch (e) { }
+        }
+
+        function applySheetConfig(conf) {
+            sheetConf = conf;
+            fightInfoJsonServerUrl = "";
+            if (conf.id && conf.name) {
+                fightInfoJsonServerUrl = (conf.server || gsx2json) + "?id=" + encodeURIComponent(conf.id) + "&sheet=" + encodeURIComponent(conf.name);
+                if (conf.apiKey)
+                    fightInfoJsonServerUrl += "&api_key=" + encodeURIComponent(conf.apiKey);
+            }
+        }
+
+        /*
+         * Accepts a full Google sheet URL or just its ID
+         */
+        function extractSheetId(value) {
+            value = value.trim();
+            var match = value.match(/\/spreadsheets\/d\/([a-zA-Z0-9_-]+)/);
+            return match ? match[1] : value;
+        }
+
+        /*
+         * Link that opens this scoreboard with the current sheet config, to set up further scoreboards
+         */
+        function sheetShareLink() {
+            if (!sheetConf.id || !sheetConf.name)
+                return "";
+            var link = location.origin + location.pathname + "?sheetId=" + encodeURIComponent(sheetConf.id) + "&sheetName=" + encodeURIComponent(sheetConf.name);
+            if (sheetConf.apiKey)
+                link += "&apiKey=" + encodeURIComponent(sheetConf.apiKey);
+            return link;
+        }
+
+        /*
         * Optional: Functions to load fight info from server via JSON
         * set fightInfoJsonServerUrl to enable feature
         * format: {"redname":"","whitename":"","groupname":"","roundname":""}
@@ -583,6 +765,7 @@ Free usage and modification for non-commercial use.
                 }
                 break;
             }
+            saveState();
         }
 
         /*
@@ -611,6 +794,16 @@ Free usage and modification for non-commercial use.
         window.addEventListener('contextmenu', function (e) { // Not compatible with IE < 9
             e.preventDefault();
         }, false);
+
+        /*
+         * Offline support: when served from a web server, a service worker (sw.js) keeps a copy
+         * of this page, so it still loads and reloads without internet connection.
+         */
+        if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js").catch(function () { });
+            });
+        }
 
     </script>
     <style type="text/css">
@@ -841,6 +1034,16 @@ Free usage and modification for non-commercial use.
             text-align: center;
         }
 
+        .menutable input.wide {
+            width: 450px;
+        }
+
+        .menuhelp {
+            font: normal 14px sans-serif;
+            max-width: 800px;
+            margin-bottom: 10px;
+        }
+
         div {
             -moz-user-select: -moz-none;
             -khtml-user-select: none;
@@ -935,7 +1138,7 @@ Free usage and modification for non-commercial use.
             </tr>
             <tr>
                 <td class="center">R</td>
-                <td>Reset all</td>
+                <td>Reset all (next fight)</td>
                 <td></td>
             </tr>
             <tr>
@@ -979,6 +1182,48 @@ Free usage and modification for non-commercial use.
             <tr>
                 <td></td>
                 <td><input type="button" id="menusavebtn" value="Save" onclick="toggleMenu();"></td>
+            </tr>
+        </table>
+        <h1>Google Sheet (optional)</h1>
+        <div class="menuhelp">
+            Load fighter names, group and round from a Google Sheet, so names don't have to be typed for each fight:
+            <ol>
+                <li>Copy the <a href="https://docs.google.com/spreadsheets/d/1hddz-5w_Wb4MR8uZh4Q7mzHyleLJMmjpHnPbzbc-nzU/edit?usp=sharing"
+                        target="_blank">template sheet</a>, or create a sheet with the columns
+                    <i>whitename</i>, <i>redname</i>, <i>done</i>, <i>groupname</i>, <i>roundname</i>.
+                    Use one sheet tab per mat if you run several mats.</li>
+                <li>Share the sheet: "Anyone with the link" can view.</li>
+                <li>Paste the sheet URL (or its ID) and the tab name below, click Save.</li>
+                <li>The first fight not marked <i>done</i> is shown. After a fight, tick <i>done</i> in the
+                    sheet and press R to reset and load the next fight.</li>
+            </ol>
+            To set up more scoreboards with the same sheet, open the share link (shown after saving) on each of them.
+            Leave the sheet URL empty to type names by hand.
+        </div>
+        <table class="menutable">
+            <tr>
+                <td><label for="menu_sheetid">Sheet URL or ID: </label></td>
+                <td><input type="text" id="menu_sheetid" class="wide" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="menu_sheetname">Sheet tab name: </label></td>
+                <td><input type="text" id="menu_sheetname" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="menu_sheetapikey">Google API key (if required by server): </label></td>
+                <td><input type="text" id="menu_sheetapikey" class="wide" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="menu_sheetserver">gsx2json server: </label></td>
+                <td><input type="text" id="menu_sheetserver" class="wide" value="" /></td>
+            </tr>
+            <tr>
+                <td><label for="menu_sharelink">Share link: </label></td>
+                <td><input type="text" id="menu_sharelink" class="wide" value="" readonly onclick="this.select();" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Save" onclick="toggleMenu();"></td>
             </tr>
         </table>
         <h1>Manual time override</h1>
